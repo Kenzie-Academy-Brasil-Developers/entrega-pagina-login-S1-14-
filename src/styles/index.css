@@ -1,1 +1,118 @@
-/* Desenvolva seu código aqui... */
+.forgot--password {
+    cursor: pointer;
+}
+
+.modal__appear {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 22px;
+    gap: 36px;
+
+
+    width: 346px;
+    height: 312px;
+
+
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.modal__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 173px;
+
+    width: 301px;
+    height: 32px;
+}
+
+.modal__close {
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    font-weight: bold;
+
+    border-radius: 50%;
+    border: none;
+    
+
+    color: #FFFFFF;
+    background: #d00000;
+}
+
+.modal__description {
+    width: 231px;
+    height: 48px;
+
+}
+
+.modal__submit {
+    width: 298px;
+    height: 104px;
+
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.modal__email {
+    width: 298px;
+    height: 44px;
+    left: 22px;
+    top: 180px;
+
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.modal__submit--button {
+    width: 298px;
+    height: 44px;
+    margin-top: 15px;
+
+    background: #d00000;
+    border: #d00000;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.show__modal {
+    display: flex;
+}
+
+.show__modal .modal {
+    animation: modalAnimation 1s ease;
+}
+
+@keyframes modalAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-60%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

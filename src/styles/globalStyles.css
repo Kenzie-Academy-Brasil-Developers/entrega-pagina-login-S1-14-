@@ -1,15 +1,119 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color-primary: /* definir */;
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --color-primary: #d00000;
     --color-grey-1: #191C1F;
     --color-grey-2: #212529;
     --color-grey-3: #343A40;
     --color-grey-4: #ADB5BD;
     --color-grey-5: #CED4DA;
     --color-grey-6: #EDF2FF;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    background: var(--color-grey-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    width: 714px;
+    height: 407px;
+    left: 283px;
+    top: 156px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.side__container {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 321px;
+    height: 407px;
+    left: 283px;
+    top: 156px;
+
+    background: #d00000;
+    border: 1px solid #d00000;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.nautico {
+    width: 200px;
+    height: 200px;
+}
+
+
+.side__container--info {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.main__container--infos {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 400px;
+    gap: 15px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.infos__button {
+    width: 298px;
+    height: 44px;
+
+    background-color: #d00000;
+    color: #FFFFFF;
+    border: 1px solid #d00000;
+
+    font-size: 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.tittle--login {
+
+    width: 119px;
+    height: 16px;
+    margin-bottom: 40px;
+
+    color: #d00000;
+}
+
+.forgot--password {
+    background-color: transparent;
+    font-size: 16px;
+    color: #d00000;
+    border: none;
+    margin-left: 44px;
 }

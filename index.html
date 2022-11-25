@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,51 @@
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
     <title>Login</title>
+    <script src="./src/scripts/modal.js" defer></script>
 </head>
+
 <body>
-    <script src="./src/scripts/modal.js"></script>
+    <div class="container">
+        <div class="main__container">
+            <div class="side__container">
+                <div class="logo">
+                    <img src="/src/styles/Simbolo-escudo-nautico.png" alt="Escudo do Náutico" class="nautico">
+                </div>
+                <div class="side__container--info">
+                    Venha fazer parte da mais fiél do Nordeste
+                </div>
+            </div>
+            <div class="main__container--infos">
+                <h1 class="tittle--login">
+                    Login
+                </h1>
+                <label for="email" >Email</label>
+                <input type="email" class="modal__email" placeholder=" Digite seu email aqui">
+                <label for="password">Senha</label>
+                <input type="password" class="modal__email" placeholder=" Digite sua senha aqui">
+                <button class="forgot--password" data-modal__controL="forgotPassword">Esqueceu a senha?</button>
+                <button class="infos__button">
+                    Fazer Login
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__appear" id="forgotPassword">
+        <div class="modal">
+            <div class="modal__title">
+                <h3>Problemas para entrar?</h3>
+                <button class="modal__close" data-modal__controL="forgotPassword">X</button>
+            </div>
+            <div class="modal__description">
+                <h4>Insira seu email abaixo e enviaremos um link para você redefinir sua senha.</h4>
+            </div>
+            <div class="modal__submit">
+
+                <input type="email" placeholder=" Digite aqui seu email aqui" class="modal__email">
+                <button class="modal__submit--button" type="submit">Enviar link</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
